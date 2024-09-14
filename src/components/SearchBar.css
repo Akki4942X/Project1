@@ -1,0 +1,76 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for search bar */
+  .search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: url('/images/globe-background.png') no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styling for the search bar */
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Styling for results list */
+  .results-list {
+    list-style-type: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+  
+  .results-list .result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .results-list .result-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .results-list .result-country {
+    font-weight: bold;
+  }
+  
+  .results-list .result-capital {
+    color: #6c757d;
+  }
+  
+  .results-list .no-results {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+  }
+  
